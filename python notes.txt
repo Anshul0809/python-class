@@ -1,0 +1,32 @@
+python token;
+1.keyword
+2.punctuation (special symbols)
+
+3.identifier(object name)
+def.name of an object
+variable=variable hold object refrence
+ 1.name of any object in python
+ .do not start with digit (0-9)
+ .start with either letter or underscore(_)
+ .do not use space in b/w identifiers
+ .case sensitive
+
+
+
+4.literals(constent value)
+Type of literals
+1.INTEGER
+2.FLOAT
+3.COMPLEX(REAL+IMAGINARY(J))
+
+5.operator
+
+
+INBUILD FUNCTION
+1.print()
+2.type()
+3.id()
+4.input()
+
+PEP8S
+
