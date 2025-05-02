@@ -158,3 +158,17 @@ print(id(y))
 print(id(z))
 print(x is y)
 print(x is z)'''
+
+#BITWISE operator(&,|,~,<<,>>)
+# x=3
+# y=7
+# print(x & y)
+# print(x | y)
+# print( ~ y)
+# print( ~ x)
+
+# left shift
+x=10
+print(x<<2)
+x=10
+print(x>>2)
