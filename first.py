@@ -168,7 +168,91 @@ print(x is z)'''
 # print( ~ x)
 
 # left shift
-x=10
+'''x=10
 print(x<<2)
 x=10
-print(x>>2)
+print(x>>2)'''
+
+#empty data type declaration (generaly typecasting ke liye use hoti hai)
+'''x=int()
+print(x) 
+print(type(x))
+x=float()
+print(x)
+print(type(x))
+x=complex()
+print(x)
+print(type(x))
+y=list()
+print(y)
+z=str()
+print(z)
+a=tuple()
+print(a)
+b=dict()
+print(b)
+c=set()
+print(c)
+f=frozenset()
+print(f)
+'''
+# second type to declaration
+'''x=0
+print(x)
+print(type(x))
+x=0.0
+print(x)
+print(type(x))
+x=''
+print(x)
+print(type(x))
+x=[]
+print(x)
+print(type(x))
+x=()
+print(x)
+print(type(x))
+x={}
+print(x)
+print(type(x))'''
+
+#typecasting
+
+'''x=input('enter any no..=')
+print(x)
+# print(type(x)) //by default string'''
+
+
+'''x=int(input('enter a number'))
+print(x)
+print(type(x)) '''
+
+#eval inbuilt function (pythhon inbuilt function =print,type,id,input,eval,max,min,sum,len)
+# x=eval(input('enter anything:'))
+# print(x)
+# print(type(x))
+
+''' s="python"
+# print(sum(s))
+print(max(s))
+print(min(s))
+print(len(s))
+
+l=[10,20,30,40 ,'python']
+print(max(l))
+print(min(l))
+print(len(l))
+print(sum(l))'''
+
+#python inbuilt class(int,str,list,tuple,set,dict,frozenset,float,complex)
+
+'''print('hello')
+print('hii')
+x=10
+y=20
+print(x,y) 
+####print(sep=' ' ,end='\n')
+print("hello",end=',')
+print('hii')
+print(x,y ,sep=" , ")'''
+
