@@ -256,3 +256,66 @@ print("hello",end=',')
 print('hii')
 print(x,y ,sep=" , ")'''
 
+# bytes ka size janne ke liye
+'''
+import sys
+x=int()
+y=str()
+z=list()
+p=tuple()
+q=dict()
+r=set()
+s=frozenset()
+print( "size of integer :",sys.getsizeof(x))
+print(sys.getsizeof(y))
+print(sys.getsizeof(z))
+print(sys.getsizeof(p))
+print(sys.getsizeof(q))
+print(sys.getsizeof(r))
+print(sys.getsizeof(s))'''
+
+# python object 
+# 1.mutable
+# 2.immutable
+#immutable
+'''x=10
+y=10
+print(id(x),id(y))
+x="python"
+y="python"
+print(id(x),id(y))
+
+
+x=(10,20,30)
+y=(10,20,30)
+print(id(x),id(y))
+#mutable
+
+x=[10,20,30]
+y=[10,20,30]
+print(id(x),id(y))'''
+
+# Indexing (orderd collection requeired only ),(findout element position)
+# syntex =collection.index('element')
+# collection = list,tuple, string
+# index(element,start,stop)(stop=excluded)
+'''s="python"
+print(s.index('o'))
+print(s.index('y',2)) #substring not found
+print(s.index('h',1,3)) #substring not found
+'''
+'''l=[10,20,30 ,'python','java']
+print(l.index(30))
+print(l.index(30,2))
+print(l.index(30,3))
+print(l.index('java',3,4))'''
+
+# find out first as well as last element
+# syntex = collection[indexposition]
+'''s="python"
+print(s[0]) #first element
+print(s[-1]) #last element
+print(s[3]) #third(fourth) element
+print(s[-3]) #third element from last'''
+
+
