@@ -318,4 +318,86 @@ print(s[-1]) #last element
 print(s[3]) #third(fourth) element
 print(s[-3]) #third element from last'''
 
+###Slice
 
+#syntex:-collection[start:stop:step/direction]
+#minimum value =s[:]
+#rules:1. check step direction if direction not mention that means bydefault its +ve(1)
+#2.check start ans stoppoint direction if not given it folloes step direction
+#3.if above both directions are same that means we grt o/p but if above both directions are different/opposite that means we always get empty o/p
+
+'''s="i love python"
+print(s[: :])
+s="i love python"
+print(s[: : 2]) '''
+
+'''s="i love python"
+print(s[::-1]) #string reverse
+print(s[2:10])
+print(s[7:-10])
+print(s[7:-2]) 
+print(s[7:7]) 
+print(s[7:-6]) '''
+
+#nesting slice
+'''
+s="I love python"
+print(s[::-1][1:7][::-1][2:3])
+'''
+
+'''s='PythonProgramming'
+print (s[6:][::-1][:6])'''
+
+###Range
+#create collection of similar pattern sequential element
+#syntex ; range (start,stop,stepdirection)
+#RANGE(stop)
+#range(start ,stop)
+
+#example=
+
+'''n=int(input("enter any number"))
+x=range(1,n+1)
+print(x)
+print(list(x))'''
+
+'''x=range(-1,-10)
+print(list(x))'''
+
+'''x=range(-1,-11,-1)
+print(list(x))
+
+x=range(2,11,2)
+print(tuple(x))
+
+x=range(1,10,2)
+print(tuple(x))
+
+x=range(-4,5,2)
+print(tuple(x))
+
+x=range(-4,0,1)
+print(tuple(x))
+
+x=range(-5,-4)
+print(tuple(x))
+
+x=range(-5,-6,-1)
+print(tuple(x))
+
+x=range(4,-5,-2)
+print(tuple(x))
+
+x=range(10,0,-1)
+print(tuple(x))'''
+
+
+'''
+#print
+print(end="/n")
+#print(end=",")
+print('hii',end=",")
+print(sep='')
+print(x,y,sep=",")
+
+'''
