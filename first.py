@@ -401,3 +401,108 @@ print(sep='')
 print(x,y,sep=",")
 
 '''
+
+'''#######data type
+1.numeric
+a.integer
+b.float
+c.complex
+2.ordered collection
+a.sting
+b.list
+c.tuple
+3.unordered collection
+a.set
+b.frozenset
+4.mapped
+a.dictionary
+5.boolean
+##fundamentaldata type'''
+
+'''x=10
+print(x)
+print(type(x))
+
+x=10.5
+print(x)
+print(type(x))
+
+x=("anshul")
+print(x)
+print(type(x))
+
+x=10+2j
+print(x)
+print(type(x))'''
+
+#python inbuilt function for numeric
+'''1.max()
+2.min()
+3.len()
+4.type()
+5.id()
+6.print()
+'''
+'''x=10 #(it is not iterable)
+print(len(x)) '''
+
+#int
+'''x=10
+print(x)
+print(type(x))
+print(id(x))  #it is applicable'''
+
+#oderded collection(string,list,tuple)
+#string
+'''.collection of charecter
+.repersent by '' ,"", ''''''
+.oderded collection
+.indexing support
+.slicing support
+.immutable'''
+
+'''x="anshul" #it is iterable
+#pythoninbuilt function
+print(max(x))
+print(min(x))
+print(len(x))
+print(id(x))
+print(type(x))
+print(x)'''
+
+#string inbuilt methods
+'''1.lower()
+2.upper()
+3.swapcase()
+4.titel()
+5.capitalize()
+6.center()
+7.join()
+8.split()'''
+
+'''s="This is python class"
+print(s.lower())
+print(s.upper())
+print(s.swapcase())
+print(s.title())
+print(s.title())
+print(s.capitalize())
+print(s.center(100,'!'))'''
+#join()
+#syntex='seperator'.join(iterator)
+'''
+s1="anshul"
+s2="gajbhiye"
+# print(''.join(s1,s2)) //error
+print(' '.join(s1))
+print(' '.join((s1,s2)))
+print(' '.join([s1,s2]))
+'''
+#split()
+#syntex= variable.split(__,__)#(where,howmanytimes)
+s="this is python"
+print(s.split()) #bydefault split by space (space ko hatake ,)
+print(s.split('s')) #split by s(s ko hatake ,)
+print(s.split('s',0)) #split by s,0
+print(s.split('s',1)) #split by s,1
+
