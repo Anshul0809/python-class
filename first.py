@@ -417,7 +417,13 @@ b.frozenset
 4.mapped
 a.dictionary
 5.boolean
-##fundamentaldata type'''
+##fundamentaldata type 
+1.integer
+2.string
+3.list
+4.tuple
+5.dict.. 
+'''
 
 '''x=10
 print(x)
@@ -500,9 +506,240 @@ print(' '.join([s1,s2]))
 '''
 #split()
 #syntex= variable.split(__,__)#(where,howmanytimes)
-s="this is python"
+'''s="this is python"
 print(s.split()) #bydefault split by space (space ko hatake ,)
 print(s.split('s')) #split by s(s ko hatake ,)
 print(s.split('s',0)) #split by s,0
 print(s.split('s',1)) #split by s,1
+'''
+s="python123"
+'''
+print(s.isascii())
+print(s.isdigit())
+print(s.isspace())
+print(s.isnumeric())
+print(s.isdecimal())
+'''#return boolean
 
+##list
+# defi.collection of homogeneous as well as heterogeneous element
+# represented through [] with , sapereted element
+
+'''
+l1=["python","java","php"]
+l2=[1,2,3,4,5]
+print(max(l1))
+print(max(l2)) 
+print(min(l1))
+print(min(l2))
+# print(sum(l1)) //error 
+print(sum(l2))
+print(len(l1))
+print(len(l2))
+print(type(l1))
+print(type(l2))
+print(id(l1))
+print(id(l2))
+print(l1)
+print(l2)
+'''
+#list method (copy(),clear(),append(),extend(),insert(),pop(),remove(),index(),count(),reverse(),sort())
+'''
+l=[10,20,30,40,10,10,"python"]
+
+l.append("java")
+print(l)
+l.append([2,4,5,6,8,10])
+print(l)
+l.extend(["php","java"])
+print(l)
+l.extend("python")
+print(l)
+l.extend("21")
+print(l)
+l.extend("p")
+print(l)
+l.insert(0,"java")
+print(l)
+l.insert(0,[1,2,3,4,5])
+print(l)
+
+l.pop()
+print(l)
+l.remove(30)
+print(l)
+
+l=[10,20,30,"python"]
+print(l.index(20))
+
+'''
+'''
+#count():-(frequncy calculate karna )
+l=[10,20,30,10,50,60,10]
+print(l.count(10))
+print(l.count(20))
+print(l.count(100)) 
+
+l=[10,30,5,20]
+l.sort()
+print(l)
+
+l=[2,4,6,1,3,5]
+l.reverse()
+print(l)
+
+#arrange decending order
+
+# l.sort (assending order)
+# l.reverse(desending order)
+
+l=[10,20,50,30,2,4]
+# l.sort()
+# l.reverse()
+l.sort(reverse=True) #desending order
+print(l)
+
+#copy
+l=[10,20,30,50]
+l1=l.copy()
+print(l)
+print(l1)
+print(id(l),id(l1)) 
+
+#clear
+l=[10,20,30,"python"]
+l.clear()
+x=l
+print(l)
+print(id(x))
+# l.clear()
+# print(l)
+# print(id())
+del l #del use to delet object in memory
+print(l)
+
+'''
+### Tuple = collection of odered homogeneuse as well as hetrogeneuse element
+# repersented through () with comma sapareted object
+# indexing supported
+# sclicing supported
+# immutable in nature 
+# example
+'''
+t=(2,4,3,6,1,5)
+print(t)
+print(id(t))
+'''
+# python inbuilt function for tuple' 
+# len()
+# max()  (only homogeneus)
+# min()  (only homogeneus)
+# sum()  (only homogeneus numeric)
+# type()
+# id()
+
+'''
+t=(2,4,6,"python")
+print(len(t))
+# print(max(t)) #only homogeneus //error
+# print(min(t)) #only homogeneus 
+# print(sum(t)) #only homogeneus numeric //error
+print(type(t))
+print(id(t))
+
+t=("python","java")
+print(max(t)) #only homogeneus //python
+print(min(t)) #only homogeneus //java
+
+t=(10,10.5,20)
+print(sum(t)) #only homogeneus numeric //40.5
+'''
+'''
+#inbuilt methods of tuple (index,count)
+t=(10,20,30,"python",40)
+print(t.index("python")) 
+# print(t.index("python",4)) #// error
+print(t.count(10))
+'''
+#dictionary
+#def.collection of key value pair
+#key should be unique
+# Value may be duplicate
+#represented through {} with comma saoereted key value pair
+# indexing not support
+# sclicing not supported
+# mutable in nature
+# 
+#python inbuilt function for dictionary
+#len()
+#max()
+#min()
+#sum()
+#type()
+#id()
+'''
+d={'name':'Anshul','age':20,'quali':'b.tech'}
+print(len(d))
+print(max(d))
+print(min(d))
+
+d={'name':'Anshul',1:20,'quali':'b.tech'}
+# print(max(d)) #error (not supported between instances of 'int' and 'str')
+# print(min(d)) #error (not supported between instances of 'int' and 'str')
+print(len(d))
+
+d={2:'Anshul',1:20,3:'b.tech'}
+print(max(d)) 
+print(min(d))
+print(sum(d)) 
+print(len(d))
+print(type(d))
+print(id(d))
+
+d={2:'Anshul',2:20,'3':'b.tech'}
+print(d)
+'''
+#dictionary methods
+# 2.update()
+# 3.clear()
+# 4.copy()
+# 5.get('key')
+# 6.items()
+# 7.keys()
+# 8.pop('key')
+# 9.popitem() #remove last item
+# 10.setdefault()
+# 11.values()
+# 12.fromkeys()
+
+'''
+d={'name':'Anshul','age':20,'quali':'b.tech'}
+print(d.keys())
+print(d.values())
+print(d.items())
+print(d.get('name'))
+print(d.get('age'))
+# d.pop('age')
+# print(d)
+# d.popitem()
+# print(d)
+
+#use of fromkeys()
+l=[1,2,3,'z','a','s','f']
+d=dict.fromkeys(l,10)
+print(d)
+
+d={'name':'Anshul','age':20,'quali':'b.tech'}
+# d.setdefault('name1','rahul')
+# d.setdefault('name','rahul')
+# print(d.setdefault('name','rahul'))
+# print(d)
+# x=d.copy()
+# print(x)
+# d.clear()
+# print(d)
+
+d1={'name':'ans','age':25}
+d.update(d1)
+print(d)
+'''
