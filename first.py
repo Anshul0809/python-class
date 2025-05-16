@@ -743,3 +743,121 @@ d1={'name':'ans','age':25}
 d.update(d1)
 print(d)
 '''
+
+###set()
+# unordered collection of unique element 
+# representing through {} with comma sapereted object
+# indexing not supported
+# sclicing not supported
+# mutable in nature
+#ex:=
+'''
+st={2,4,6,8,2,"python","java","php"} 
+print(st)
+print(id(st))
+print(type(st))
+
+#python methods for set
+# 1.len()
+# 2.max() //error
+# 3.min() //error
+# 4.sum()  //error
+ 
+print(len(st))
+print(max(st)) #error
+print(min(st)) #error
+print(sum(st)) #error
+
+'''
+#inbuilt methods
+
+# s. 
+# 1.add() //add element in set
+# 2.remove() //remove element from set
+# 3.pop() //remove random element from set
+# 4.clear() //clear all element from set
+# 5.discard() //remove element from set if present
+# 6.union() //return union of two set
+# 7.intersection() //return intersection of two set
+# 8.difference() //return difference of two set
+# 9.copy() //return copy of set
+# 10.update() //update set with elements from another set
+# 11.issubset() //check if set is subset of another set
+# 12.issuperset() //check if set is superset of another set
+# 13.issubset() //check if set is subset of another set
+# 14.issuperset() //check if set is superset of another set
+# 15.isdisjoint() //check if set is disjoint with another set
+# 16.frozenset() //return frozenset object
+# 17.remove() //remove element from set if present
+# 18.discard() //remove element from set if present
+#19.symmetric_difference()
+#20.symmetric_difference_update()
+
+s={2,4,6,8,'python','java'}
+##single set applicable methods
+
+# s.add('php') #add element in set on element
+# print(s)
+# s.update(1,3) #add multiple element in set
+# print(s)  #error (int' object is not iterable)
+# s.update('python')
+# print(s)
+# s.update((1,3,5,10))
+# print(s)
+# s.update((1,3,'anshul'),"python")
+# print(s)
+# s.pop()  #ramdom oneelement delete
+# print(s) 
+# s.remove('java') #delete perticular element from set
+# print(s)
+# # s.remove('Java')
+# # print(s) error
+# s.discard('Java')
+# print(s) #error se bachne ke liye use kare discard element nhi hai to same exicute ho jayega
+# s.clear()
+# print(s) #clear all element from set
+# S1=s.copy()
+# print(S1) #copy of set
+# print(id(s),id(S1))
+
+##double set applicable methods
+#union
+s1={1,2,3,4,5}
+s2={4,5,6,7,8}
+# print(s1.union(s2)) #return union of two set
+#intersection
+# print(s1.intersection(s2)) #return intersection of two set common element
+#difference
+# print(s1.difference(s2)) #return difference of two set (s1-s2=and only s1 element returns)
+#symmetric_difference
+# print(s1.symmetric_difference(s2)) #return symmetric difference of two set (intersection ka just opposite)
+
+#intersection_update
+#difference_update
+#symmetric_difference_update
+
+# s1.intersection_update(s2) #intersection update
+# print(s1) #s1 me intersection of s2 element add ho jayega
+# print(s2) #no change
+
+# s1.difference_update(s2) #difference update
+# print(s1) #s1 me difference of s2 element delete ho jayega
+# print(s2) #no change
+
+# s1.symmetric_difference_update(s2)
+# print(s1) #s1 me symmetric difference of s2 element add ho jayega
+# print(s2) #no change
+
+#isdisjoint()
+print(s1.isdisjoint(s2))
+
+#issuperset
+print(s1.issuperset(s2)) 
+print(s2.issuperset(s1))
+
+#issubset
+print(s1.issubset(s2)) 
+
+
+
+
