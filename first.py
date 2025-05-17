@@ -792,7 +792,7 @@ print(sum(st)) #error
 # 18.discard() //remove element from set if present
 #19.symmetric_difference()
 #20.symmetric_difference_update()
-
+'''
 s={2,4,6,8,'python','java'}
 ##single set applicable methods
 
@@ -858,6 +858,30 @@ print(s2.issuperset(s1))
 #issubset
 print(s1.issubset(s2)) 
 
+'''
+#frozenset (union,intersection,difference,symmetric difference are applicable)
+fs1={10,20,10,30,20,40}
+fs2={2,4,6,8}
+fs1=frozenset(fs1)
+fs2=frozenset(fs2)
+print(fs1)
+# print(fs1.union(fs2)) #union merged two set
+# print(fs1.intersection(fs2)) #intersection common element return
+# print(fs1.difference(fs2)) #difference s1-s2 return
+# print(fs1.symmetric_difference(fs2)) #symmetric difference s1-s2 and s2-s
+# print(fs1.isdisjoint(fs2))
+# print(fs1.issubset(fs2))
+# print(fs1.issuperset(fs2))
 
+#empty declaration of datatypes will be
+#int()
+#float()
+#complex()
+#str()
+#list()
+#tuple()
+#dict()
+#set()
+#frozenset()
 
 
